@@ -7,7 +7,6 @@ A simple project developed for learning purposes, aiming to practice and evaluat
 ## 🚀 Features
 
 - **Customizable Passwords**: Generate secure passwords with custom length and character set.
-- **Real-time Strength Indicator**: Visually see password strength as you customize settings.
 - **Copy-to-Clipboard**: Quickly copy generated passwords with one click.
 - **User-Friendly Interface**: Easy-to-use, intuitive design.
 
