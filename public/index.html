@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+
+  <!-- Font Awesome CDN para Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts - Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1><i class="fa fa-lock"></i> Password generator</h1>
+
+    <div class="senha-gerada"> Select options to generate a password</div>
+    
+    
+
+    <div class="controls">
+      <label>Nº of characters</label>
+      <input type="number" class="qtd-caracteres" min="1" max="30" value="20"><br>
+
+      <label><input type="checkbox" class="chk-maiusculas" checked>Uppercase letters</label><br>
+      <label><input type="checkbox" class="chk-minusculas" > Lowercase letters</label><br>
+      <label><input type="checkbox" class="chk-numeros" checked> Numbers</label><br>
+      <label><input type="checkbox" class="chk-simbolos" > Symbols</label><br>
+
+      <button class="btn-gerar"><i class="fa fa-sync-alt"></i> Generate Password</button>
+    </div>
+  </div>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>

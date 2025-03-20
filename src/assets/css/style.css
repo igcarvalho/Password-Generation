@@ -1,0 +1,215 @@
+:root {
+  --primary-dark: #1e1e2f;
+  --secondary-purple: #8e2de2;
+  --gradient-bg: linear-gradient(-45deg, #141e30, #243b55, #6a3093, #141e30);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--primary-dark);
+  background: linear-gradient(-45deg, #141e30, #243b55, #41295a, #2f0743);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.5);
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+  color: #fff;
+  animation: fadeUp 1s ease;
+  margin: 50px auto;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.password-gerado {
+  padding: 12px;
+  background: rgba(255,255,255,0.1);
+  color: #00e676;
+  font-weight: 600;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 4px 15px rgba(0,0,0,0.2);
+  font-size: 1.2em;
+  animation: fadeIn 1s ease;
+}
+
+label {
+  display: block;
+  color: #fff;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  margin-left: 10px;
+  text-align: center;
+}
+
+button.btn-gerar {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(142, 45, 226, 0.4);
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 18px;
+  width: 18px;
+  background-color: #2b364f;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #8e2de2;
+}
+
+input[type="checkbox"]::before {
+  content: "\f00c";
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Melhorando estilo dos textos das labels */
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e1e8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+label:hover {
+  color: #8e2de2;
+}
+
+/* Input Number estilizado */
+input[type="number"] {
+  background-color: #2b364f;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-top: 8px;
+  text-align: center;
+  width: 80px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #8e2de2;
+}
+
+/* Ajuste no botão para acompanhar o estilo geral */
+button.btn-gerar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.senha-gerada {
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(142, 45, 226, 0.4);
+  text-align: center;
+  letter-spacing: 1.5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.senha-gerada::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transform: skewX(-45deg);
+  transition: left 0.5s ease;
+}
+
+.senha-gerada:hover::before {
+  left: 200%;
+}
+
+.senha-gerada:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(142, 45, 226, 0.6);
+}
