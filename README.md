@@ -30,3 +30,4 @@ git clone https://github.com/igcarvalho/Password-Generation.git
 cd Password-Generation
 npm install
 npm run build
+Then open the index.html file from the /public folder in your browser.
